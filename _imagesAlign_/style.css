@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 17%;
+}
+
+p {
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+li {
+    border: solid white 0.5px;
+
+}
+
+img {
+    cursor: pointer;
+}
+
+a {
+    color: white;
+}
