@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cadastro de Produtos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='produtos.css'>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="form">
+                <form>
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Cadastrar Produtos</h1>
+                        </div>
+                        <div class="btn-voltar">
+                            <button>Voltar</button>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="name">Nome do Produto:</label>
+                            <input id="name" type="text" name="name" placeholder="Guitarra Elétrica..." required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="description">Descrição do Produto:</label>
+                            <input id="description" type="text" name="description"
+                                placeholder="Guitarra Elétrica Muriel's, Preta - GTBM1954" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="price">Preço:</label>
+                            <input id="price" type="text" name="price" placeholder="R$ 890.90..." required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="category">Categoria:</label>
+                            <select name="category" id="category" required>
+                                <option value="" disabled selected>Selecione uma Categoria...</option>
+                                <option value="Instrumento de Corda">Instrumento de Corda</option>
+                                <option value="Instrumento de Sopro">Instrumento de Sopro</option>
+                                <option value="Instrumento de Teclas">Instrumento de Teclas</option>
+                                <option value="Instrumento de Percussão">Instrumento de Percussão</option>
+                            </select>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="img">Imagem:</label>
+                            <input type="file" id="img" name="img" value="Escolha uma Imagem..." required>
+                        </div>
+                    </div>
+
+                    <div class="btns">
+                        <button class="btn-save">Salvar Produto</button>
+                        <button class="btn-cancel">Cancelar</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

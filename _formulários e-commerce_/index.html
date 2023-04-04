@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Página de Login</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='login.css'>
+    <script src='login.js'></script>
+</head>
+
+<body>
+    <main class="container">
+        <h2>Login</h2>
+        <form action="">
+            <div class="input-field">
+                <i class="fa fa-user icon"></i>
+                <input type="email" name="username" id="username" >
+                <!-- placeholder="Seu usuário..." -->
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <i class="fa fa-key icon"></i>
+                <input type="password" name="password" id="password" >
+                <!-- placeholder="Sua senha..." -->
+                <div class="underline"></div>
+            </div>
+
+            <div id="div-logar">
+                <input type="submit" value="Usuário">
+                <input type="submit" value="Administrador">
+            </div>
+        </form>
+
+        <div id="div-checkbox">
+            <input id="input-checkbox" type="checkbox">
+            <p>Manter-me logado</p>
+        </div>
+        <div id="div-forgot">
+            <p><a href="">Esqueceu a senha?</a></p>
+        </div>
+
+        <div id="div-cadastro">
+            <p id="p-cadastro">Ainda não tem conta?</p>
+            <button><a href="">Cadastre-se</a></button>           
+        </div>
+    </main>
+</body>
+
+</html>

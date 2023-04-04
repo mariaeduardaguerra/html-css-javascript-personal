@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #200122, #6f0000);
+}
+
+#container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+#form-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbd7ccd7;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 5px;
+}
+
+.form-header {
+    margin-top: 3rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #200122;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 3rem;
+}
+
+.login-button button:hover {
+    /* background: linear-gradient(to right, #200122, #6f0000); */
+    background-color: #6f0000;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #6f0000;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #200122;
+}
+
+.input-box label,
+.gender-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+    font-size: 0.65rem;
+    font-weight: 500;
+}
+
+.gender-inputs {
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35rem;
+}
+
+.gender-input label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+#div-btn-continue {
+    display: flex;
+    gap: 13%;
+    margin-top: 1rem;
+}
+
+.continue-button-01 {
+    margin-bottom: 2rem;
+    margin-top: 0.1rem;
+}
+
+.continue-button-01 button {
+    width: 200px;
+    height: 6vh;
+    border: none;
+    background-color: #200122;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button-01 button:hover {
+    background: linear-gradient(to left, #200122, #6f0000);
+}
+
+.continue-button-01 button a {
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: white;
+}
+
+.continue-button-02 {
+    margin-bottom: 2rem;
+    margin-top: 0.1rem;
+}
+
+.continue-button-02 button {
+    width: 200px;
+    height: 6vh;
+    border: none;
+    background-color: #200122;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button-02 button:hover {
+    background: linear-gradient(to right, #200122, #6f0000);
+}
+
+.continue-button-02 button a {
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: white;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .gender-inputs {
+        margin-top: 2rem;
+    }
+
+    .gender-group {
+        flex-direction: column;
+    }
+
+    .gender-title h6 {
+        margin: 0;
+    }
+
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+}
