@@ -1,1 +1,1 @@
-# HTML-and-CSS-personal-projects
+# html & css & javascript | personal projects
