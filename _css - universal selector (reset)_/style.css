@@ -11,10 +11,32 @@
     overflow: hidden;
 } */
 
+/*-------------- CORES BACKGROUND --------------*/
+
 /* body {
-    background-color: black;
-    background: rgb(2,0,36);
+
+    SLIGHT OCEAN VIEW (azul)
+    background: linear-gradient(45deg, #a8c0ff, #3f2b96);
+    https://uigradients.com/#SlightOceanView
+
+    WHALE HOUSE (preto, roxo escuro)
+    background-color: #130f40;
+    background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+    https://www.eggradients.com/gradient/whale-house
+
+    BORDÔ/BORDEAUX
+    #550A21
+    https://www.htmlcsscolor.com/hex/550A21
+
+    PRETO, ROXO E AQUA
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,55,116,1) 35%, rgba(0,212,255,1) 100%);
+
+    ROXO E VERMELHO
+    background: linear-gradient(45deg, #200122, #6f0000);
+
+    ROXO E AQUA
+    background: linear-gradient(to left, #5B2C6F 50%, #4CE2C9 75%);
+
 } */
 
 main {
