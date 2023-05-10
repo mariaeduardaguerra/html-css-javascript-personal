@@ -7,9 +7,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* html {
+html {
     overflow: hidden;
-} */
+}
 
 body {
     background-image: linear-gradient(70deg, #2D5EA7 0%, #46434D 74%);
